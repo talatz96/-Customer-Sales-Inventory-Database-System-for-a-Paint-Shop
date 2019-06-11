@@ -1,0 +1,49 @@
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #B1E0E9;
+    position: fixed;
+    width: 98%;
+}
+
+
+li 
+{
+    display: inline;
+    float: left;
+}
+
+
+li a 
+{
+	display: block;
+    color: #05467C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #B1E0E9;
+    font-family: Trebuchet MS;
+}
+
+
+.active 
+{
+    background-color: #B1E0E6;
+    color: #05467C;
+}
+
+
+li a:hover 
+{
+    background-color: #05467C;
+    color: #B1E0E9;
+}
+
+
+li:last-child 
+{
+    border-right: none;
+}

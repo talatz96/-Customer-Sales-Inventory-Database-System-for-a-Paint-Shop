@@ -1,0 +1,65 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <title>Add New Product</title>
+</head>
+ 
+<body>
+
+       <br/>
+    <ul> 
+          <li><a href="customers_13038.php">Customers</a></li>
+          <li><a href="salesperson_13038.php">Salesperson</a></li>
+          <li><a href="products_13038">Product</a></li>
+          <li><a href="users_13038.php">Users</a></li>
+          <li style="float:right"><a class="active" href="logout.php">Log out</a></li>
+    </ul>
+
+    <br/>
+    <br/>
+    <br/>   
+
+    <h1>Add New Product</h1>
+    <br/>
+ 
+    <form action = "addproduct.php" method="post" name="form1">
+        <table class="table_add">
+            <tr> 
+                <td>Product Code</td>
+                <td><input type="text" name="product_id"></td>
+            </tr>
+            <tr> 
+                <td>Brand</td>
+                <td><input type="text" name="brand"></td>
+            </tr>
+            <tr> 
+                <td>Type</td>
+                <td><input type="text" name="type"></td>
+            </tr>
+            <tr> 
+                <td>Shade</td>
+                <td><input type="text" name="shade"></td>
+            </tr>
+            <tr> 
+                <td>Size</td>
+                <td>
+                <br>
+                <input type="radio" name="size" value="L"> Large<br>
+                <input type="radio" name="size" value="M"> Medium<br>
+                <input type="radio" name="size" value="S"> Small<br>
+                <br>
+                </td>
+            </tr>
+            <tr> 
+                <td>Price</td>
+                <td><input type="text" name="price"></td>
+            </tr>
+                <td></td>
+            </tr>
+        </table>
+        <input class="btn" type="submit" name="Submit" value="Add Product">
+    </form>
+    <!-- <footer>Talat Zubair_13038</footer> -->
+</body>
+</html>

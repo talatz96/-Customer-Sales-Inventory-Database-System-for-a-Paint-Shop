@@ -1,0 +1,64 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <title>Add New Salesperson</title>
+</head>
+ 
+<body>
+    <br/>
+    <ul> 
+          <li><a href="customers_13038.php">Customers</a></li>
+          <li><a href="salesperson_13038.php">Salesperson</a></li>
+          <li><a href="products_13038">Product</a></li>
+          <li><a href="users_13038.php">Users</a></li>
+          <li style="float:right"><a class="active" href="logout.php">Log out</a></li>
+    </ul>
+
+    <br/>
+    <br/>
+    <br/>   
+
+    <h1>Add New Salesperson</h1>
+    <br/>
+ 
+    <form action="addsalesperson.php" method="post" name="form1">
+        <table class="table_add">
+            <tr> 
+                <td>Salesperson ID</td>
+                <td><input type="text" name="sp_id"></td>
+            </tr>
+            <tr> 
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr> 
+                <td>Contact Number</td>
+                <td><input type="text" name="contact_number"></td>
+            </tr>
+            <tr> 
+             <?php 
+               include_once("customers_13038.php");
+                $customer_list = mysqli_query($mysqli, "SELECT customer_id FROM customers_13038"); ?>
+                <td>Customer List</td>
+                <td>
+                <select name="customer_list" type= "text" value = "<?php echo $customer_list;?>">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                </td>
+            </tr>
+            <tr> 
+                <td></td>
+            </tr>
+        </table>
+        
+        <input class="btn" type="submit" name="Submit" value="Add Salesperson">
+    </form>
+    <!-- <footer>Talat Zubair_13038</footer> -->
+</body>
+</html>

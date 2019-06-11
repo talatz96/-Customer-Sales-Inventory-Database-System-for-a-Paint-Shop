@@ -1,0 +1,58 @@
+body
+{
+        background-image: url("homeheader.jpg");
+}
+
+
+.example_e 
+{
+        border: none;
+        height: 100px;
+        width: 100px;
+        background: #ffffff;
+        color: #05467C;
+        font-weight: 300;
+        font-family: Trebuchet MS;
+        padding: 20px;
+        text-transform: camelcase;
+        border-radius: 100px;
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 50px;
+        text-decoration: none;
+}
+
+.example_e:hover 
+{
+        text-align: center;
+        color: #05467C !important;
+        font-weight: 700 !important;
+        letter-spacing: 2px;
+        background: #B1E0E9;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        font-size: 11px;  
+}
+
+.button_cont 
+{
+        background-image: homeheader.jpg;
+        display: inline;
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        text-decoration: none;
+}
+
+
+.buttons
+{
+        margin: 100px;
+        padding: 100px;
+}
+
+
+a 
+{
+        text-decoration: none;
